@@ -203,6 +203,78 @@ footer {
     margin: 5%;
 }
 
+/*Service Page*/
+/* Service Page */
+
+.service-header-img {
+    width: 100%;
+}
+
+.service {
+    margin: 3% 0% 3% 0%;
+}
+
+.service h1 {
+    font-size: 1.5em;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 3% 0% 3% 0%;
+}
+
+.service-box {
+    border: 1px solid black;
+    margin: 1.5% 0% 1.5% 0%;
+    max-width: 48.5%;
+    padding: 3%;
+    background-color: rgb(241, 240, 240);
+}
+
+.service-box button {
+    margin: 5% 0% 5% 0%;
+    background-color: white;
+    width: 35%;
+    height: 20%;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-box button:hover {
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+}
+
+.service-footer-left {
+    max-width: 49%;
+    padding-right: 2%;
+}
+
+.services-info-img {
+    width: 49%;
+    height: 49%;
+}
+
+ul.b {
+    list-style-type: square;
+    padding-left: 6%;
+}
+
+
+
 /*Media Querie - 800px*/
 
 @media only screen and (max-width: 800px) {
@@ -233,8 +305,14 @@ footer {
     .cta-button {
         width: 50%;
     }
+
+    /*Service Page*/
+    .service-box button {
+        height: 15%;
+    }
 }
 
+/* Media Querie 500px */
 
 @media only screen and (max-width: 500px) {
     
@@ -285,6 +363,57 @@ footer {
     .email {
         margin: 5% 0% 0% 0%;
     }
+
+    /* Service Page */
+
+    .service {
+        margin: 10% 0% 10% 0%; 
+    }
+
+    .service-container {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    .service-box {
+        max-width: 100%; 
+        margin: 5% 0% 5% 0%; 
+    }
+
+    .service-box h3 {
+        margin: 3% 3% 6% 3%; 
+    }
+
+    .service-box p {
+        margin: 3%; 
+    }
+
+    .service-box button {
+        margin-left: 30%; 
+        min-height: 40px; 
+    }
+
+    .services-info-img {
+        display: none; 
+    }
+
+    .service-footer {
+        align-items: stretch; 
+    }
+
+    .service-footer-left {
+        min-width: 100%;
+        margin: 10% 0% 10% 0%; 
+    }
+
+    .service-footer-left p {
+        margin-top: 5%; 
+    }
+
+    ul.b {
+        padding-left: 10%; 
+    }
+
 }
 
 
