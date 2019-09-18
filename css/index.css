@@ -200,3 +200,32 @@ footer {
     margin: 5%;
 }
 
+/*Media Querie - 800px*/
+
+@media only screen and (max-width: 800px) {
+
+    nav {
+        flex-direction: column-reverse;
+        align-items: center; 
+    }
+
+    .nav {
+        width: 100%;
+        text-align: center; 
+        margin: 3% 0% 0% 0%; 
+    }
+
+    .splash-img {
+        display: none; 
+    }
+
+    .cta h1 {
+        font-size: 4em; 
+    }
+
+    .cta-container {
+        margin: 6% 0% 6% 0%; 
+    }
+}
+
+
